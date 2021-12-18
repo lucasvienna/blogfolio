@@ -1,7 +1,11 @@
+import type { LinksFunction, MetaFunction } from 'remix';
 import { Link, Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useCatch } from 'remix';
-import type { MetaFunction, LinksFunction } from 'remix';
-import ErrorPage from './error';
+
+import darkStylesUrl from '~/styles/dark.css';
 import errorCssUrl from '~/styles/error.css';
+import globalStylesUrl from '~/styles/global.css';
+
+import ErrorPage from './error';
 
 // https://remix.run/api/conventions#meta
 export const meta: MetaFunction = () => ({
@@ -14,6 +18,12 @@ export const links: LinksFunction = () => [
   {
     rel: 'stylesheet',
     href: 'https://unpkg.com/modern-css-reset/dist/reset.min.css',
+  },
+  { rel: 'stylesheet', href: globalStylesUrl },
+  {
+    rel: 'stylesheet',
+    href: darkStylesUrl,
+    media: '(prefers-color-scheme: dark)',
   },
   {
     rel: 'stylesheet',
