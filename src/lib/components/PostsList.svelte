@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { Post } from '$lib/types';
 	import { formatDate } from '$lib/utils';
 
@@ -9,7 +10,7 @@
 	{#each posts as post}
 		<li>
 			<small>{formatDate(post.date)}</small>
-			<h3><a href={'/article/' + post.slug}>{post.title}</a></h3>
+			<h3><a href={base + '/article/' + post.slug}>{post.title}</a></h3>
 			<p>{post.description}</p>
 		</li>
 	{/each}

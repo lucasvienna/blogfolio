@@ -1,18 +1,19 @@
 <script>
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 </script>
 
 <div data-theme="auto">
 	<nav class="container-fluid">
 		<ul>
-			<li><a href="/"><strong>Lucas Vienna</strong></a></li>
+			<li><a href="{base}/"><strong>Lucas Vienna</strong></a></li>
 		</ul>
 		<ul>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === `${base}/about` ? 'page' : undefined}>
+				<a href="{base}/about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
-				<a href="/blog">Blog</a>
+			<li aria-current={$page.url.pathname === `${base}/blog` ? 'page' : undefined}>
+				<a href="{base}/blog">Blog</a>
 			</li>
 			<li>
 				<!-- See theme-switcher.js for how this works -->

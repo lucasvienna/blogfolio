@@ -2,6 +2,7 @@
 	import config from '$lib/config';
 	import Heading from '$components/Heading.svelte';
 	import PostsList from '$components/PostsList.svelte';
+	import { base } from '$app/paths';
 
 	export let data;
 	let { posts } = data;
@@ -27,7 +28,7 @@
 	<PostsList {posts} />
 
 	<div>
-		<a href="/blog">See all posts</a>
+		<a href="{base}/blog">See all posts</a>
 	</div>
 </section>
 
