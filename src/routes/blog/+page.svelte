@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
 	import PostsList from '$components/PostsList.svelte';
 	import Heading from '$components/Heading.svelte';
