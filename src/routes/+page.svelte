@@ -1,59 +1,38 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+<script lang="ts">
+	import config from '$lib/config';
+	import Heading from '$components/Heading.svelte';
+	import PostsList from '$components/PostsList.svelte';
+
+	export let data;
+	let { posts } = data;
+
+	$: posts = posts.slice(0, 3);
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>{config.titlePrefix}Home</title>
+	<meta name="description" content="Lucas' landing page" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+<Heading title="Lucas Vienna" subtitle="Software Engineer | Product Manager" />
 
-		to your new<br />SvelteKit app
-	</h1>
+<section role="main">
+	My resumé, portfolio, and development blog. This is where I talk about code, tech, my projects,
+	and anything related to my professional life. You'll see posts about tools, languages, frameworks,
+	apps, websites and more. Mostly I'll talk about my current project, the tooling I'm using and
+	how/why I'm doing things this way or that.
+</section>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+<section role="feed">
+	<PostsList {posts} />
 
-	<Counter />
+	<div>
+		<a href="/blog">See all posts</a>
+	</div>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	section[role='feed'] div:last-of-type {
+		text-align: center;
 	}
 </style>

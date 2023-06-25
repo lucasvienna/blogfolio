@@ -1,26 +1,30 @@
+<script lang="ts">
+	import Heading from '$components/Heading.svelte';
+	import * as config from '$lib/config';
+</script>
+
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>{config.titlePrefix} About</title>
+	<meta name="description" content="A few words about me" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
+<Heading title="About" subtitle="A few words about me" />
 
+<section>
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		I am a software developer originally from São Paulo, Brazil and currently live in Karlsruhe,
+		Germany. I studied Business Informatics at the Karlsruhe University of Applied Sciences (HKA),
+		and work for <a href="https://dscsag.com">DSC Software AG</a> as a
+		<em>"Developer | Product Manager"</em>.
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
+		My areas of focus are web and mobile development, with experience in edge devices and IoT. I
+		also have experience as a translator and editor with a background in AAA videogames and mobile
+		applications. I'm an enthusiat for automation and continuous delivery.
 	</p>
-</div>
+
+	<p>
+		At the moment, my interests are <em>SvelteKit</em>, <em>Spring Boot</em>, and <em>Flutter</em>.
+	</p>
+</section>
