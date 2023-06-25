@@ -12,19 +12,30 @@
 
 <section>
 	<p>
-		I am a software developer originally from São Paulo, Brazil and currently live in Karlsruhe,
-		Germany. I studied Business Informatics at the Karlsruhe University of Applied Sciences (HKA),
-		and work for <a href="https://dscsag.com">DSC Software AG</a> as a
-		<em>"Developer | Product Manager"</em>.
+		I'm a software developer originally from São Paulo, Brazil, now residing in Karlsruhe, Germany.
+		With a strong educational background in Business Informatics from the Karlsruhe University of
+		Applied Sciences (HKA), I currently work at <a href="https://dscsag.com">DSC Software AG</a> as
+		a <em>"Developer | Product Manager"</em>, where I combine my technical expertise with my passion
+		for building exceptional software solutions.
 	</p>
 
 	<p>
-		My areas of focus are web and mobile development, with experience in edge devices and IoT. I
-		also have experience as a translator and editor with a background in AAA videogames and mobile
-		applications. I'm an enthusiat for automation and continuous delivery.
+		My areas of focus lie primarily in web and mobile development, with a special interest in edge
+		devices and the exciting world of IoT. Alongside my development skills, I also possess valuable
+		experience as a translator and editor, gained through my involvement with AAA video games and
+		mobile applications as a volunteer before and during university.
 	</p>
 
 	<p>
-		At the moment, my interests are <em>SvelteKit</em>, <em>Spring Boot</em>, and <em>Flutter</em>.
+		Automation and continuous delivery are two of my key passions. I firmly believe in streamlining
+		processes and harnessing the power of automation to achieve efficiency and superior results.
+		This mindset permeates my work, enabling me to deliver high-quality solutions with a focus on
+		scalability and reliability.
+	</p>
+
+	<p>
+		Currently, my areas of exploration revolve around SvelteKit, Spring Boot, and Flutter. I am
+		continually delving into these technologies, leveraging their capabilities to create interesting
+		web and mobile applications.
 	</p>
 </section>
