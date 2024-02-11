@@ -13,9 +13,9 @@
 		"node": "^20.7.0",
 		"pnpm": "^8.10.0"
 	},
-	"packageManager": "pnpm@8.14.3",
+	"packageManager": "pnpm@8.15.1",
 	"volta": {
-		"node": "20.10.0"
+		"node": "20.11.0"
 	},
 	"scripts": {
 		"dev": "vite dev",
@@ -28,7 +28,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"prepare": "pnpm exec playwright install"
+		"prepare": "pnpm exec playwright install",
+		"postinstall": "svelte-kit sync"
 	},
 	"dependencies": {
 		"@fontsource/fira-mono": "^5.0.8",
