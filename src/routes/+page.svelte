@@ -21,8 +21,8 @@
 	<p>
 		I'm a software engineer and product manager with a passion for creating innovative solutions and
 		exploring the latest technologies. Whether it's diving into the world of containers, automating
-		repetitive tasks, leveraging the power of Rust language, or building dynamic web applications
-		with Svelte and SvelteKit, I'm constantly seeking new avenues to expand my skills.
+		repetitive tasks, leveraging the power of Rust, or building dynamic web applications with Svelte
+		and SvelteKit, I'm constantly seeking new avenues to expand my skills.
 	</p>
 
 	<p>
