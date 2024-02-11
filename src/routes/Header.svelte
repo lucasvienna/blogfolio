@@ -17,9 +17,9 @@
 			</li>
 			<li>
 				<!-- See theme-switcher.js for how this works -->
-				<details role="list" dir="rtl">
-					<summary aria-haspopup="listbox" role="link">Theme</summary>
-					<ul role="listbox">
+				<details class="dropdown">
+					<summary>Theme</summary>
+					<ul>
 						<!-- svelte-ignore a11y-invalid-attribute -->
 						<li><a href="#" data-theme-switcher="auto">Auto</a></li>
 						<!-- svelte-ignore a11y-invalid-attribute -->
@@ -35,7 +35,7 @@
 
 <style>
 	/* Nav */
-	summary[role='link']:is([aria-current], :hover, :active, :focus) {
+	summary:is([aria-current], :hover, :active, :focus) {
 		background-color: transparent;
 	}
 
