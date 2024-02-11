@@ -4,7 +4,7 @@ import { mdsvex, escapeSvelte } from 'mdsvex';
 import remarkUnwrapImages from 'remark-unwrap-images';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
-import shiki from 'shiki';
+import { getHighlighter } from 'shiki';
 
 const dev = process.argv.includes('dev');
 
@@ -13,7 +13,7 @@ const mdsvexOptions = {
 	extensions: ['.md'],
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await shiki.getHighlighter({ theme: 'github-dark' });
+			const highlighter = await getHighlighter({ theme: 'github-dark' });
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
 			return `{@html \`${html}\` }`;
 		}
