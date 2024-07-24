@@ -46,7 +46,7 @@
 	<small>
 		This page is served by <a href="https://pages.github.com">GitHub Pages</a>.
 		<br />
-		&copy; Lucas Vienna 2019 - 2023
+		&copy; Lucas Vienna 2019 - ${new Date().getFullYear()}
 	</small>
 </footer>
 

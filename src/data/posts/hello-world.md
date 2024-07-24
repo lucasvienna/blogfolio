@@ -1,7 +1,7 @@
 ---
 title: Hello World
 description: Who am I and what is this blog about?
-date: '2023-06-24'
+date: '2024-06-24'
 categories:
   - fluff
   - personal
@@ -30,8 +30,7 @@ environments, hardware, keyboards, audio and maybe more. A somewhat large collec
 I have a large assortment of interests.
 
 So, this is my personal website. It is intended to be my resumé, portfolio and blog all in one
-little bundle. I hope to post something every 2 weeks or so, and I'm currently working on a projects
-gallery to host my portfolio. I am also working on a "how to write your own portfolio website"
-article detailing my work on this website.
+little bundle. I hope to post something every now and then, and I'm currently working on a projects
+gallery to host my portfolio. I am also working on a secret project in Rust...
 
 That will be it for now. I hope to have your eyes again for the next article.
