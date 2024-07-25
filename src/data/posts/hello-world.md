@@ -8,8 +8,6 @@ categories:
 published: true
 ---
 
-Who am I and what is this blog about?
-
 **Hi, my name is Lucas**
 
 and I'm a Business Informatics graduate, software engineer, and translator. I'm also an avid reader,
