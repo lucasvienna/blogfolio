@@ -1,11 +1,11 @@
 ---
 title: Empire - Part 1
 description: Getting started with Rust by making a game
-date: '2024-07-24'
+date: '2024-07-25'
 categories:
   - rust
   - empire
-published: false
+published: true
 ---
 
 In an effort to learn Rust in a fun way, I've decided to write a game (server) with it. My grand
