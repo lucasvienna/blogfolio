@@ -13,7 +13,7 @@
 		"node": "^20.11.0",
 		"pnpm": "^9.6.0"
 	},
-	"packageManager": "pnpm@9.6.0",
+	"packageManager": "pnpm@9.7.1",
 	"volta": {
 		"node": "20.16.0"
 	},
@@ -32,37 +32,37 @@
 		"postinstall": "svelte-kit sync"
 	},
 	"dependencies": {
-		"@fontsource/fira-mono": "^5.0.13",
+		"@fontsource/fira-mono": "^5.0.14",
 		"@picocss/pico": "^2.0.6",
-		"lucide-svelte": "^0.414.0",
+		"lucide-svelte": "^0.428.0",
 		"rehype-slug": "^6.0.0",
 		"remark-toc": "^9.0.0",
 		"remark-unwrap-images": "^4.0.0"
 	},
 	"devDependencies": {
 		"@neoconfetti/svelte": "^2.2.1",
-		"@playwright/test": "^1.45.3",
-		"@sveltejs/adapter-auto": "^3.2.2",
-		"@sveltejs/adapter-static": "^3.0.2",
-		"@sveltejs/kit": "^2.5.18",
+		"@playwright/test": "^1.46.1",
+		"@sveltejs/adapter-auto": "^3.2.4",
+		"@sveltejs/adapter-static": "^3.0.4",
+		"@sveltejs/kit": "^2.5.24",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/cookie": "^0.6.0",
-		"@types/node": "^20.14.12",
-		"@typescript-eslint/eslint-plugin": "^7.17.0",
-		"@typescript-eslint/parser": "^7.17.0",
-		"@vitest/coverage-v8": "^2.0.4",
+		"@types/node": "^20.16.1",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"@vitest/coverage-v8": "^2.0.5",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.43.0",
-		"mdsvex": "^0.11.2",
+		"mdsvex": "^0.12.3",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.6",
 		"svelte": "^4.2.18",
-		"svelte-check": "^3.8.4",
+		"svelte-check": "^3.8.5",
 		"tslib": "^2.6.3",
 		"typescript": "^5.5.4",
-		"vite": "^5.3.4",
-		"vitest": "^2.0.4",
+		"vite": "^5.4.1",
+		"vitest": "^2.0.5",
 		"vitest-github-actions-reporter": "^0.11.1"
 	}
 }
