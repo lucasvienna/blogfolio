@@ -35,7 +35,7 @@
 
 <style>
 	/* Nav */
-	summary:is([aria-current], :hover, :active, :focus) {
+	summary:is(:hover, :active, :focus) {
 		background-color: transparent;
 	}
 

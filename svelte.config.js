@@ -1,7 +1,7 @@
 import adapterStatic from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
-import remarkUnwrapImages from 'remark-unwrap-images';
+import remarkUnwrapImages from 'rehype-unwrap-images';
 import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
 
