@@ -12,18 +12,18 @@
 
 <section>
 	<p>
-		I'm a software developer originally from São Paulo, Brazil, now residing in Karlsruhe, Germany.
-		With a strong educational background in Business Informatics from the Karlsruhe University of
-		Applied Sciences (HKA), I currently work at <a href="https://dscsag.com">DSC Software AG</a> as
-		a <em>"Developer | Product Manager"</em>, where I combine my technical expertise with my passion
-		for building exceptional software solutions.
+		I'm a cloud engineer originally from São Paulo, Brazil, now residing in Karlsruhe, Germany. With
+		a strong educational background in Business Informatics from the Karlsruhe University of Applied
+		Sciences (HKA), I currently work at <a href="https://dscsag.com">DSC Software AG</a> as a
+		<em>Senior Software Engineer</em>, where I combine my technical expertise with my passion for
+		building exceptional software solutions.
 	</p>
 
 	<p>
-		My areas of focus lie primarily in web and mobile development, with a special interest in edge
-		devices and the exciting world of IoT. Alongside my development skills, I also possess valuable
-		experience as a translator and editor, gained through my involvement with AAA video games and
-		mobile applications as a volunteer before and during university.
+		My areas of focus lie primarily in web development and cloud platforms, with a special interest
+		in Infrastructure-as-Code (IaC) and automation. Alongside my development skills, I also possess
+		valuable experience as a translator and editor, gained through my involvement with AAA video
+		games and mobile applications as a volunteer before and during university.
 	</p>
 
 	<p>
@@ -34,7 +34,7 @@
 	</p>
 
 	<p>
-		Currently, my areas of exploration revolve around SvelteKit, Spring Boot, and Flutter. I am
+		Currently, my areas of exploration revolve around SvelteKit, Spring Boot, Rust, and AWS. I am
 		continually delving into these technologies, leveraging their capabilities to create interesting
 		web and mobile applications.
 	</p>

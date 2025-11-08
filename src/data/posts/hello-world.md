@@ -11,7 +11,7 @@ published: true
 **Hi, my name is Lucas**
 
 and I'm a Business Informatics graduate, software engineer, and translator. I'm also an avid reader,
-I like to play videogames and write code in my free time, and I aspire to be a stoic, or at least
+I like to play videogames and write code in my free time, and I aspire to be a stoic—or at least
 emulate the sage well enough. With this first post, I aim to explain my reasoning for writing a blog
 and what its contents will be.
 
@@ -19,7 +19,7 @@ First in the order of business: why am I writing a blog. Simple: I wish to have 
 record of my learnings, my work and the evolution of my knowledge over time. My idea was therefore
 to write posts about the technologies I'm currently using, the scripts I put together, the neat
 tricks I learn and so on. My other reason is to maybe help someone. I know I enjoy reading a
-well-put article on using a piece of tech, code etc, and I wish to give back by writing my own
+well-put article on using a piece of tech or code and I wish to give back by writing my own
 (hopefully) well-written articles.
 
 Regarding the content, you can expect to see posts all over the tech spectrum: frontend frameworks,
