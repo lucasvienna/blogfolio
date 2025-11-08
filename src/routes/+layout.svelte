@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '@picocss/pico';
-	import './styles.css';
-	import Header from './Header.svelte';
-	import Footer from './Footer.svelte';
+	import "@picocss/pico";
+	import Footer from "./Footer.svelte";
+	import Header from "./Header.svelte";
+	import "./styles.css";
 </script>
 
 <Header />

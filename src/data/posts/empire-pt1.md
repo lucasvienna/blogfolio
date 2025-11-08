@@ -1,7 +1,7 @@
 ---
 title: Empire - Part 1
 description: Getting started with Rust by making a game
-date: '2024-07-25'
+date: "2024-07-25"
 categories:
   - rust
   - empire

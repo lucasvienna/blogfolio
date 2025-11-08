@@ -1,8 +1,8 @@
 <script lang="ts">
-	import config from '$lib/config';
-	import Heading from '$components/Heading.svelte';
-	import PostsList from '$components/PostsList.svelte';
-	import { base } from '$app/paths';
+	import { resolve } from "$app/paths";
+	import Heading from "$components/Heading.svelte";
+	import PostsList from "$components/PostsList.svelte";
+	import config from "$lib/config";
 
 	export let data;
 	let { posts } = data;
@@ -54,13 +54,13 @@
 
 	{#if data.posts.length > 3}
 		<div>
-			<a href="{base}/blog">See all posts</a>
+			<a href={resolve("/blog")}>See all posts</a>
 		</div>
 	{/if}
 </section>
 
 <style>
-	section[role='feed'] div:last-of-type {
+	section[role="feed"] div:last-of-type {
 		text-align: center;
 	}
 

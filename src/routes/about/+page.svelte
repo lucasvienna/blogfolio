@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Heading from '$components/Heading.svelte';
-	import * as config from '$lib/config';
+	import Heading from "$components/Heading.svelte";
+	import * as config from "$lib/config";
 </script>
 
 <svelte:head>

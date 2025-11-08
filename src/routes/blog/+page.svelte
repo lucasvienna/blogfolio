@@ -1,7 +1,7 @@
 <script lang="ts">
-	import * as config from '$lib/config';
-	import PostsList from '$components/PostsList.svelte';
-	import Heading from '$components/Heading.svelte';
+	import * as config from "$lib/config";
+	import PostsList from "$components/PostsList.svelte";
+	import Heading from "$components/Heading.svelte";
 
 	export let data;
 

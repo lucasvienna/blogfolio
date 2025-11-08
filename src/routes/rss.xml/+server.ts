@@ -1,18 +1,18 @@
-import config from '$lib/config';
-import type { Post } from '$lib/types';
+import config from "$lib/config";
+import type { Post } from "$lib/types";
 
 export const prerender = true;
 
 export async function GET({ fetch }) {
-	const response = await fetch('api/posts');
+	const response = await fetch("api/posts");
 	const posts: Post[] = await response.json();
 
-	const headers = { 'Content-Type': 'application/xml' };
+	const headers = { "Content-Type": "application/xml" };
 
 	const xml = `
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
-				<title>${config.titlePrefix + 'Blog'}</title>
+				<title>${config.titlePrefix + "Blog"}</title>
 				<description>${config.description}</description>
 				<link>${config.url}</link>
 				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
@@ -28,7 +28,7 @@ export async function GET({ fetch }) {
 						</item>
 					`
 					)
-					.join('')}
+					.join("")}
 			</channel>
 		</rss>
 	`.trim();

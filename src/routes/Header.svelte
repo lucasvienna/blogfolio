@@ -1,19 +1,19 @@
 <script>
-	import { base } from '$app/paths';
-	import { page } from '$app/stores';
+	import { resolve } from "$app/paths";
+	import { page } from "$app/stores";
 </script>
 
 <div data-theme="auto">
 	<nav class="container-fluid">
 		<ul>
-			<li><a href="{base}/"><strong>Lucas Vienna</strong></a></li>
+			<li><a href={resolve("/")}><strong>Lucas Vienna</strong></a></li>
 		</ul>
 		<ul>
-			<li aria-current={$page.url.pathname === `${base}/about` ? 'page' : undefined}>
-				<a href="{base}/about">About</a>
+			<li aria-current={$page.url.pathname === resolve(`/about`) ? "page" : undefined}>
+				<a href={resolve("/about")}>About</a>
 			</li>
-			<li aria-current={$page.url.pathname === `${base}/blog` ? 'page' : undefined}>
-				<a href="{base}/blog">Blog</a>
+			<li aria-current={$page.url.pathname === resolve(`/blog`) ? "page" : undefined}>
+				<a href={resolve("/blog")}>Blog</a>
 			</li>
 			<li>
 				<!-- See theme-switcher.js for how this works -->

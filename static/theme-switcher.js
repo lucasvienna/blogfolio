@@ -7,12 +7,12 @@
 
 const themeSwitcher = {
 	// Config
-	_scheme: 'auto',
-	menuTarget: 'details.dropdown',
-	buttonsTarget: 'a[data-theme-switcher]',
-	buttonAttribute: 'data-theme-switcher',
-	rootAttribute: 'data-theme',
-	localStorageKey: 'picoPreferredColorScheme',
+	_scheme: "auto",
+	menuTarget: "details.dropdown",
+	buttonsTarget: "a[data-theme-switcher]",
+	buttonAttribute: "data-theme-switcher",
+	rootAttribute: "data-theme",
+	localStorageKey: "picoPreferredColorScheme",
 
 	// Init
 	init() {
@@ -27,7 +27,7 @@ const themeSwitcher = {
 
 	// Preferred color scheme
 	get preferredColorScheme() {
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 	},
 
 	// Init switchers
@@ -35,31 +35,31 @@ const themeSwitcher = {
 		const buttons = document.querySelectorAll(this.buttonsTarget);
 		buttons.forEach((button) => {
 			button.addEventListener(
-				'click',
+				"click",
 				(event) => {
 					event.preventDefault();
 					// Set scheme
 					this.scheme = button.getAttribute(this.buttonAttribute);
 					// Close dropdown
-					document.querySelector(this.menuTarget)?.removeAttribute('open');
+					document.querySelector(this.menuTarget)?.removeAttribute("open");
 				},
 				false
 			);
 		});
 
 		// detect changes to preferred color scheme and update
-		const preference = window.matchMedia('(prefers-color-scheme: dark)');
-		preference.addEventListener('change', (mediaQuery) => {
-			if (mediaQuery.matches) this.scheme = 'dark';
-			else this.scheme = 'light';
+		const preference = window.matchMedia("(prefers-color-scheme: dark)");
+		preference.addEventListener("change", (mediaQuery) => {
+			if (mediaQuery.matches) this.scheme = "dark";
+			else this.scheme = "light";
 		});
 	},
 
 	// Set scheme
 	set scheme(scheme) {
-		if (scheme == 'auto') {
+		if (scheme == "auto") {
 			this._scheme = this.preferredColorScheme;
-		} else if (scheme == 'dark' || scheme == 'light') {
+		} else if (scheme == "dark" || scheme == "light") {
 			this._scheme = scheme;
 		}
 		this.applyScheme();
@@ -73,7 +73,7 @@ const themeSwitcher = {
 
 	// Apply scheme
 	applyScheme() {
-		document.querySelector('html')?.setAttribute(this.rootAttribute, this.scheme);
+		document.querySelector("html")?.setAttribute(this.rootAttribute, this.scheme);
 	},
 
 	// Store scheme to local storage

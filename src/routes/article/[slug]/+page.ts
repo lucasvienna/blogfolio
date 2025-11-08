@@ -1,5 +1,5 @@
-import type { Metadata } from '$lib/types';
-import { error } from '@sveltejs/kit';
+import type { Metadata } from "$lib/types";
+import { error } from "@sveltejs/kit";
 
 export async function load({ params }) {
 	try {
@@ -10,6 +10,6 @@ export async function load({ params }) {
 			meta: post.metadata as Metadata
 		};
 	} catch (e) {
-		error(404, `Could not find ${params.slug}`);
+		error(404, new Error(`Could not find ${params.slug}`, { cause: e }));
 	}
 }

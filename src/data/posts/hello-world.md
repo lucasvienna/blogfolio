@@ -1,7 +1,7 @@
 ---
 title: Hello World
 description: Who am I and what is this blog about?
-date: '2024-06-24'
+date: "2024-06-24"
 categories:
   - fluff
   - personal

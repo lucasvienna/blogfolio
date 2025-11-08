@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as config from '$lib/config';
-	import { formatDate } from '$lib/utils';
+	import * as config from "$lib/config";
+	import { formatDate } from "$lib/utils";
 
 	export let data;
 </script>
@@ -21,7 +21,7 @@
 		</hgroup>
 		<!-- Tags -->
 		<div class="tags">
-			{#each data.meta.categories as category}
+			{#each data.meta.categories as category (category)}
 				<span>&num;{category}</span>
 			{/each}
 		</div>

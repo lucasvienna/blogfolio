@@ -2,13 +2,13 @@ name: Deploy
 
 on:
   workflow_run:
-    workflows: ['Test']
+    workflows: ["Test"]
     branches: [main]
     types:
       - completed
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: "24"
 
 jobs:
   build_site:
@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          path: "build/"
 
   deploy:
     needs: build_site

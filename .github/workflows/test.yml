@@ -2,10 +2,10 @@ name: Test
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: "24"
 
 jobs:
   check:

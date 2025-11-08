@@ -1,4 +1,4 @@
-export type Categories = 'sveltekit' | 'svelte' | string;
+export type Categories = "sveltekit" | "svelte" | string;
 
 export type Post = Metadata & {
 	slug: string;

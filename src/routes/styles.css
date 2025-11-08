@@ -1,9 +1,9 @@
-@import '@fontsource/fira-mono';
+@import "@fontsource/fira-mono";
 
 /* Cyan Light scheme (Default) */
 /* Can be forced with data-theme="light" */
-[data-theme='light'],
-:root:not([data-theme='dark']) {
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
 	--primary: #bb1f39;
 	--primary-hover: #f47c90;
 	--primary-focus: rgba(187, 31, 57, 0.125);
@@ -23,7 +23,7 @@
 
 /* Cyan Dark scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
-[data-theme='dark'] {
+[data-theme="dark"] {
 	--primary: #d52b47;
 	--primary-hover: #fda4b3;
 	--primary-focus: rgba(187, 31, 57, 0.25);
