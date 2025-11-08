@@ -32,9 +32,6 @@ jobs:
         run: pnpm install
 
       - name: Build site
-        # this is only required if hosting under github.io/<repo>
-        # env:
-        #   BASE_PATH: '/blogfolio'
         run: |
           pnpm build
           touch build/.nojekyll
