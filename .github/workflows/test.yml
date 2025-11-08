@@ -48,7 +48,7 @@ jobs:
       - name: Run Vitest tests
         run: pnpm test:ci
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: coverage
@@ -79,7 +79,7 @@ jobs:
       - name: Run Playwright tests
         run: pnpm test:e2e
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: playwright-report
