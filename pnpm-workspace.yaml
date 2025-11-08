@@ -1,2 +1,5 @@
+engineStrict: true
+resolutionMode: highest
+minimumReleaseAge: 1440 # 1 day
 onlyBuiltDependencies:
   - esbuild
