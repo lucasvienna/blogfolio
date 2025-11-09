@@ -9,7 +9,7 @@ const dev = process.argv.includes("dev");
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: [".md"],
+	extensions: [".md", ".mdx"],
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
 	rehypePlugins: [rehypeSlug]
 };
@@ -30,6 +30,9 @@ const config = {
 			$data: "./src/data",
 			$components: "./src/lib/components"
 		}
+	},
+	compilerOptions: {
+		runes: true
 	}
 };
 

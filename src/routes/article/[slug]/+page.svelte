@@ -1,27 +1,29 @@
 <script lang="ts">
 	import * as config from "$lib/config";
 	import { formatDate } from "$lib/utils";
+	import type { PageProps } from "./$types";
 
-	export let data;
+	let { data }: PageProps = $props();
+	const { meta, content: Content } = data;
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{config.titlePrefix}{data.meta.title}</title>
+	<title>{config.titlePrefix}{meta.title}</title>
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:title" content={meta.title} />
 </svelte:head>
 
 <article>
 	<header>
 		<!-- Title -->
 		<hgroup>
-			<h1>{data.meta.title}</h1>
-			<p>Published on {formatDate(data.meta.date)}</p>
+			<h1>{meta.title}</h1>
+			<p>Published on {formatDate(meta.date)}</p>
 		</hgroup>
 		<!-- Tags -->
 		<div class="tags">
-			{#each data.meta.categories as category (category)}
+			{#each meta.categories as category (category)}
 				<span>&num;{category}</span>
 			{/each}
 		</div>
@@ -29,7 +31,7 @@
 
 	<!-- Post -->
 	<main>
-		<svelte:component this={data.content} />
+		<Content />
 	</main>
 </article>
 

@@ -20,11 +20,11 @@
 				<details class="dropdown">
 					<summary>Theme</summary>
 					<ul>
-						<!-- svelte-ignore a11y-invalid-attribute -->
+						<!-- svelte-ignore a11y_invalid_attribute -->
 						<li><a href="#" data-theme-switcher="auto">Auto</a></li>
-						<!-- svelte-ignore a11y-invalid-attribute -->
+						<!-- svelte-ignore a11y_invalid_attribute -->
 						<li><a href="#" data-theme-switcher="light">Light</a></li>
-						<!-- svelte-ignore a11y-invalid-attribute -->
+						<!-- svelte-ignore a11y_invalid_attribute -->
 						<li><a href="#" data-theme-switcher="dark">Dark</a></li>
 					</ul>
 				</details>

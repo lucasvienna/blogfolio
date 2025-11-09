@@ -1,8 +1,12 @@
 <script lang="ts">
-	/** Heading title. */
-	export let title: string;
-	/** Heading subtitle. */
-	export let subtitle: string;
+	interface Props {
+		/** Heading title. */
+		title: string;
+		/** Heading subtitle. */
+		subtitle: string;
+	}
+
+	let { title, subtitle }: Props = $props();
 </script>
 
 <!--

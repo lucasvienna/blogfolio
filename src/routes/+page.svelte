@@ -3,11 +3,11 @@
 	import Heading from "$components/Heading.svelte";
 	import PostsList from "$components/PostsList.svelte";
 	import config from "$lib/config";
+	import type { PageProps } from "./$types";
 
-	export let data;
-	let { posts } = data;
-
-	$: posts = posts.slice(0, 3);
+	let { data }: PageProps = $props();
+	let posts = data.posts;
+	let short_posts = $derived(posts.slice(0, 3));
 </script>
 
 <svelte:head>
@@ -50,9 +50,9 @@
 <section role="feed">
 	<h3>Recent Posts</h3>
 
-	<PostsList {posts} />
+	<PostsList posts={short_posts} />
 
-	{#if data.posts.length > 3}
+	{#if posts.length > 3}
 		<div>
 			<a href={resolve("/blog")}>See all posts</a>
 		</div>

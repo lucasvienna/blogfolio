@@ -3,7 +3,11 @@
 	import type { Post } from "$lib/types";
 	import { formatDate } from "$lib/utils";
 
-	export let posts: Post[];
+	interface Props {
+		posts: Post[];
+	}
+
+	let { posts }: Props = $props();
 </script>
 
 <ul id="posts">

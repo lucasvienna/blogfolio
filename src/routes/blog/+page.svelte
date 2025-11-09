@@ -2,10 +2,9 @@
 	import * as config from "$lib/config";
 	import PostsList from "$components/PostsList.svelte";
 	import Heading from "$components/Heading.svelte";
+	import type { PageProps } from "./$types";
 
-	export let data;
-
-	const { posts } = data;
+	let { data }: PageProps = $props();
 </script>
 
 <svelte:head>
@@ -16,5 +15,5 @@
 
 <!-- Posts -->
 <section>
-	<PostsList {posts} />
+	<PostsList posts={data.posts} />
 </section>

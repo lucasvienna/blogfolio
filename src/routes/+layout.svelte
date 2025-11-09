@@ -3,12 +3,14 @@
 	import Footer from "./Footer.svelte";
 	import Header from "./Header.svelte";
 	import "./styles.css";
+
+	let { children } = $props();
 </script>
 
 <Header />
 
 <main class="container">
-	<slot />
+	{@render children()}
 </main>
 
 <Footer />
