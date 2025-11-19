@@ -1,4 +1,7 @@
 name: Deploy
+concurrency:
+  group: deployment
+  cancel-in-progress: false
 
 on:
   workflow_run:
