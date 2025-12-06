@@ -32,7 +32,9 @@ const config = {
 		}
 	},
 	compilerOptions: {
-		runes: true
+		runes: true,
+		// ignore MDsveX deprecation warnings, just noise
+		warningFilter: (warning) => warning.code !== "script_context_deprecated"
 	}
 };
 
