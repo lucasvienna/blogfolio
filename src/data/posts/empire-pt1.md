@@ -40,6 +40,12 @@ Scaffolding the app to setup the database took a couple of small sessions, betwe
 due to Diesel's opinions. For example, composite primary keys comprised of two foreign keys are
 supported, but require extra boilerplate and aren't as streamlined as a single `id` primary key.
 
+One surprising benefit of learning an ORM system like Diesel was the improvement to my regular SQL
+knowledge. As it turns out, learning how to write semantic Diesel is essentially the same as
+learning proper SQL, but somewhat easier due to the strict type system. For example, the nature of
+left joins causing the right hand-side of results to be nullable shored up a gap I didn't even know
+I had regarding data integrity in joins.
+
 After the initial rush to get a database set up and working, I fell into a rabbithole with RPC and
 buffers for a homebrew protocol. After reading an article on game networking, I was driven to
 experiment with protocol buffers and bitbanging. It sounded like a very interesting field, and what
@@ -54,7 +60,7 @@ unsafe { ptr::copy(&self.data[self.index], &mut buf[0], buf.len()); }
 
 Many exceptions later, I've got a basic protocol buffer that doesn't care about word boundaries and
 is essentially a complex `[u8]` wrapper. I did learn a lot about lower level memory manipulation,
-and had a lot of bouncing sending small messages between two threads.
+and had a lot of fun bouncing small messages between two threads.
 
 For now, the Empire source is private on GitHub. I plan on open-sourcing it once a v0.1.0 is
 somewhat stable and very, very basic gameplay can be achieved. I don't even have a client written
