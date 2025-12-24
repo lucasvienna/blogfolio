@@ -1,5 +1,5 @@
 @import "@fontsource/fira-mono";
-@import "rehype-callouts/theme/github";
+@import "rehype-callouts/theme/obsidian";
 
 /* Cyan Light scheme (Default) */
 /* Can be forced with data-theme="light" */
@@ -40,4 +40,26 @@
 
 	/* Custom Variables */
 	--spacing-hero: 2rem;
+}
+
+[data-theme="dark"] {
+	.callout {
+		border-left-color: var(--rc-color-dark, var(--rc-color-default));
+		mix-blend-mode: lighten;
+	}
+
+	.callout-title {
+		color: var(--rc-color-dark, var(--rc-color-default));
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.callout {
+		border-left-color: var(--rc-color-dark, var(--rc-color-default));
+		mix-blend-mode: lighten;
+	}
+
+	.callout-title {
+		color: var(--rc-color-dark, var(--rc-color-default));
+	}
 }
