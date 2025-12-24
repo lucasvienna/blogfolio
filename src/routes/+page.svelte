@@ -6,7 +6,7 @@
 	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();
-	let posts = data.posts;
+	let posts = $derived(data.posts);
 	let short_posts = $derived(posts.slice(0, 3));
 </script>
 

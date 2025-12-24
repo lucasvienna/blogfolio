@@ -4,7 +4,7 @@
 	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();
-	const { meta, content: Content } = data;
+	const { meta, content: Content } = $derived(data);
 </script>
 
 <!-- SEO -->

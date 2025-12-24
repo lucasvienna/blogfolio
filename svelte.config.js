@@ -2,6 +2,7 @@ import adapterStatic from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
 import remarkUnwrapImages from "rehype-unwrap-images";
+import rehypeCallouts from "rehype-callouts";
 import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
 
@@ -11,7 +12,7 @@ const dev = process.argv.includes("dev");
 const mdsvexOptions = {
 	extensions: [".md", ".mdx"],
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-	rehypePlugins: [rehypeSlug]
+	rehypePlugins: [rehypeSlug, rehypeCallouts]
 };
 
 /** @type {import('@sveltejs/kit').Config} */
