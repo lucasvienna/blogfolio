@@ -58,7 +58,7 @@
 		"globals": "^17.3.0",
 		"mdsvex": "^0.12.6",
 		"oxlint": "^1.47.0",
-		"oxlint-tsgolint": "^0.12.2",
+		"oxlint-tsgolint": "^0.13.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.1",
 		"svelte": "^5.51.0",
