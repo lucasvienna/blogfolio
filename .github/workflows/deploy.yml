@@ -34,7 +34,7 @@ jobs:
           pnpm build
           touch build/.nojekyll
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           # this should match the `pages` option in your adapter-static options
           path: "build/"
