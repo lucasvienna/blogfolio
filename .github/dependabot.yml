@@ -7,6 +7,11 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+    ignore:
+      # Keep node types inside the current LTS version we're driving
+      # Must bump mise.toml + engines and devDep in package.json
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
 
   # Enable version updates for Docker
   - package-ecosystem: "docker"

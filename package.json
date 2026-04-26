@@ -1,18 +1,14 @@
 {
 	"name": "blogfolio",
 	"version": "0.0.1",
-	"type": "module",
+	"private": true,
+	"license": "MIT-Modern-Variant",
 	"author": "Lucas Vienna <dev@lucasvienna.dev> (https://lucasvienna.dev)",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/lucasvienna/blogfolio.git"
 	},
-	"license": "MIT-Modern-Variant",
-	"private": true,
-	"engines": {
-		"node": ">=24.11.0",
-		"pnpm": "^10.8.0"
-	},
+	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -68,5 +64,9 @@
 		"typescript-eslint": "^8.59.0",
 		"vite": "^8.0.10",
 		"vitest": "^4.1.5"
+	},
+	"engines": {
+		"node": "^24.11.0",
+		"pnpm": "^10.30.0"
 	}
 }
