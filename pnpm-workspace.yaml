@@ -1,5 +1,10 @@
+allowBuilds:
+  esbuild: true
 engineStrict: true
-resolutionMode: highest
-minimumReleaseAge: 1440 # 1 day
-onlyBuiltDependencies:
-  - esbuild
+minimumReleaseAgeExclude:
+  - cookie@0.7.0
+  - flatted@3.4.0
+  - flatted@3.4.2
+  - picomatch@4.0.4
+  - yaml@1.10.3
+  - postcss@8.5.10
