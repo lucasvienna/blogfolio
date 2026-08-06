@@ -51,7 +51,7 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-oxlint": "^1.76.0",
 		"eslint-plugin-svelte": "^3.22.0",
-		"globals": "^17.8.0",
+		"globals": "^17.9.0",
 		"mdsvex": "^0.12.8",
 		"oxlint": "^1.76.0",
 		"oxlint-tsgolint": "^7.0.2001",
