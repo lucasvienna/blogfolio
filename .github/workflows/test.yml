@@ -28,7 +28,10 @@ jobs:
       - name: Run Svelte checks
         run: pnpm check
 
-      - name: Run Prettier & ESLint
+      - name: Check formatting
+        run: pnpm fmt:ci
+
+      - name: Run oxlint & ESLint
         run: pnpm lint:ci
 
   unit:
