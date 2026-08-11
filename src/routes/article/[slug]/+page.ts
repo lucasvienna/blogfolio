@@ -1,16 +1,14 @@
 import type { Metadata } from "$lib/types";
 import { error } from "@sveltejs/kit";
 import type { Component } from "svelte";
+import type { PageLoad } from "./$types";
 
-export async function load({ params }) {
-	try {
-		const post = await import(`../../../data/posts/${params.slug}.md`);
+const posts = import.meta.glob<{ default: Component; metadata: Metadata }>("/src/data/posts/*.md");
 
-		return {
-			content: post.default as Component,
-			meta: post.metadata as Metadata
-		};
-	} catch (e) {
-		error(404, new Error(`Could not find ${params.slug}`, { cause: e }));
-	}
-}
+export const load: PageLoad = async ({ params }) => {
+	const post = posts[`/src/data/posts/${params.slug}.md`];
+	if (!post) error(404, `Could not find ${params.slug}`);
+
+	const { default: content, metadata: meta } = await post();
+	return { content, meta };
+};

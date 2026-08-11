@@ -7,7 +7,7 @@
 
 const themeSwitcher = {
 	// Config
-	_scheme: "auto",
+	currentScheme: "auto",
 	menuTarget: "details.dropdown",
 	buttonsTarget: "a[data-theme-switcher]",
 	buttonAttribute: "data-theme-switcher",
@@ -22,7 +22,7 @@ const themeSwitcher = {
 
 	// Get color scheme from local storage
 	get schemeFromLocalStorage() {
-		return window.localStorage?.getItem(this.localStorageKey) ?? this._scheme;
+		return window.localStorage?.getItem(this.localStorageKey) ?? this.currentScheme;
 	},
 
 	// Preferred color scheme
@@ -57,8 +57,8 @@ const themeSwitcher = {
 
 	// Set scheme
 	set scheme(scheme) {
-		if (scheme == "auto") this._scheme = this.preferredColorScheme;
-		else if (scheme == "dark" || scheme == "light") this._scheme = scheme;
+		if (scheme == "auto") this.currentScheme = this.preferredColorScheme;
+		else if (scheme == "dark" || scheme == "light") this.currentScheme = scheme;
 
 		this.applyScheme();
 		this.schemeToLocalStorage();
@@ -66,7 +66,7 @@ const themeSwitcher = {
 
 	// Get scheme
 	get scheme() {
-		return this._scheme;
+		return this.currentScheme;
 	},
 
 	// Apply scheme
