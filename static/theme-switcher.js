@@ -57,8 +57,8 @@ const themeSwitcher = {
 
 	// Set scheme
 	set scheme(scheme) {
-		if (scheme == "auto") this.currentScheme = this.preferredColorScheme;
-		else if (scheme == "dark" || scheme == "light") this.currentScheme = scheme;
+		if (scheme === "auto") this.currentScheme = this.preferredColorScheme;
+		else if (scheme === "dark" || scheme === "light") this.currentScheme = scheme;
 
 		this.applyScheme();
 		this.schemeToLocalStorage();

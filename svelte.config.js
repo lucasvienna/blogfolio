@@ -1,10 +1,10 @@
 import adapterStatic from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
-import remarkUnwrapImages from "rehype-unwrap-images";
 import rehypeCallouts from "rehype-callouts";
-import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
+import remarkUnwrapImages from "rehype-unwrap-images";
+import remarkToc from "remark-toc";
 
 const dev = process.argv.includes("dev");
 

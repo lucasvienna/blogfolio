@@ -1,7 +1,8 @@
 <script lang="ts">
-	import * as config from "$lib/config";
-	import PostsList from "$components/PostsList.svelte";
 	import Heading from "$components/Heading.svelte";
+	import PostsList from "$components/PostsList.svelte";
+	import * as config from "$lib/config";
+
 	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();

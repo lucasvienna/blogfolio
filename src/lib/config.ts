@@ -1,12 +1,10 @@
 import { dev } from "$app/environment";
-import { base } from "$app/paths";
+import { resolve } from "$app/paths";
 
 const titlePrefix = "LV | ";
 const description = "Blog and portfolio of Lucas Vienna";
-const url = ((dev ? "http://localhost:5173/" : "https://lucasvienna.dev/") + base).replace(
-	/\/$/,
-	""
-);
+const origin = dev ? "http://localhost:5173" : "https://lucasvienna.dev";
+const url = (origin + resolve("/")).replace(/\/$/u, "");
 
 export { titlePrefix, description, url };
 export default { titlePrefix, description, url };

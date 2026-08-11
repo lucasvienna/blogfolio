@@ -14,12 +14,20 @@
 	"rules": {
 		"no-unassigned-vars": "warn",
 		"curly": ["error", "multi"],
+		"eqeqeq": "error",
+		"guard-for-in": "error",
+		"no-implicit-coercion": "error",
+		"prefer-template": "error",
+		"require-unicode-regexp": "warn",
 		"import/no-unassigned-import": [
 			"error",
 			{
 				"allow": ["**/*.css"]
 			}
-		]
+		],
+		"typescript/no-deprecated": "warn",
+		"typescript/no-unsafe-assignment": "warn",
+		"typescript/require-await": "error"
 	},
 	"overrides": [
 		{

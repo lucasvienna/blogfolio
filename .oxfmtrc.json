@@ -5,6 +5,7 @@
 	"printWidth": 100,
 	"trailingComma": "none",
 	"proseWrap": "always",
+	"sortImports": true,
 	"sortPackageJson": true,
 	"svelte": true,
 	"ignorePatterns": [

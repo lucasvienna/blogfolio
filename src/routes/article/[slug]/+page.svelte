@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as config from "$lib/config";
 	import { formatDate } from "$lib/utils";
+
 	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();
