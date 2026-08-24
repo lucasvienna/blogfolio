@@ -51,7 +51,7 @@
 		"oxfmt": "^0.63.0",
 		"oxlint": "^1.78.0",
 		"oxlint-tsgolint": "^7.0.2001",
-		"svelte": "^5.56.9",
+		"svelte": "^5.56.10",
 		"svelte-check": "^4.7.6",
 		"tslib": "^2.8.1",
 		"typescript": "^6.0.3",
