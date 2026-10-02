@@ -1,5 +1,6 @@
-import { dev } from "$app/environment";
-import { fetchPosts } from "$lib/api";
+import { dev } from "$app/env";
+
+import { fetchPosts } from "#lib/api.js";
 
 import type { PageLoad } from "./$types";
 

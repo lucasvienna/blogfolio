@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { resolve } from "$app/paths";
-	import type { Post } from "$lib/types";
-	import { formatDate } from "$lib/utils";
+
+	import type { Post } from "#lib/types.js";
+	import { formatDate } from "#lib/utils.js";
 
 	interface Props {
 		posts: Post[];

@@ -1,6 +1,7 @@
-import type { Metadata } from "$lib/types";
 import { error } from "@sveltejs/kit";
 import type { Component } from "svelte";
+
+import type { Metadata } from "#lib/types.js";
 
 import type { PageLoad } from "./$types";
 

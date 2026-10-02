@@ -1,4 +1,4 @@
-import type { Post } from "$lib/types";
+import type { Post } from "#lib/types.js";
 
 /**
  * Fetch the post index from our own `/api/posts` endpoint.

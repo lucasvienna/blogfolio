@@ -1,4 +1,4 @@
-import { fetchPosts } from "$lib/api";
+import { fetchPosts } from "#lib/api.js";
 
 import type { PageLoad } from "./$types";
 

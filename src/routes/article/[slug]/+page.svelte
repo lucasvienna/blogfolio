@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as config from "$lib/config";
-	import { formatDate } from "$lib/utils";
+	import * as config from "#lib/config.js";
+	import { formatDate } from "#lib/utils.js";
 
 	import type { PageProps } from "./$types";
 

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { resolve } from "$app/paths";
-	import Heading from "$components/Heading.svelte";
-	import PostsList from "$components/PostsList.svelte";
-	import config from "$lib/config";
+
+	import Heading from "#lib/components/Heading.svelte";
+	import PostsList from "#lib/components/PostsList.svelte";
+	import config from "#lib/config.js";
 
 	import type { PageProps } from "./$types";
 
@@ -54,9 +55,7 @@
 	<PostsList posts={short_posts} />
 
 	{#if posts.length > 3}
-		<div>
-			<a href={resolve("/blog")}>See all posts</a>
-		</div>
+		<div><a href={resolve("blog")}>See all posts</a></div>
 	{/if}
 </section>
 

@@ -6,7 +6,7 @@ const config: PlaywrightTestConfig = {
 		port: 4173,
 		reuseExistingServer: !process.env.CI
 	},
-	testDir: "tests",
+	testDir: "test",
 	testMatch: /(.+\.)?(test|spec)\.[jt]s/u,
 	/* Fail the build on CI if you accidentally left test.only in the source code. */
 	forbidOnly: Boolean(process.env.CI),

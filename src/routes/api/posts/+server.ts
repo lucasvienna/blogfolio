@@ -1,6 +1,6 @@
-import { dev } from "$app/environment";
-import type { Metadata, Post } from "$lib/types";
-import { json } from "@sveltejs/kit";
+import { dev } from "$app/env";
+
+import type { Metadata, Post } from "#lib/types.js";
 
 function getPosts() {
 	const posts: Post[] = [];
@@ -24,5 +24,5 @@ function getPosts() {
 }
 
 export function GET() {
-	return json(getPosts());
+	return Response.json(getPosts());
 }

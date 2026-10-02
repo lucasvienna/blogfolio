@@ -1,5 +1,5 @@
-import { fetchPosts } from "$lib/api";
-import { description, titlePrefix, url } from "$lib/config";
+import { fetchPosts } from "#lib/api.js";
+import { description, titlePrefix, url } from "#lib/config.js";
 
 import type { RequestHandler } from "./$types";
 

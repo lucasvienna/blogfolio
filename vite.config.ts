@@ -24,17 +24,12 @@ export default defineConfig({
 				precompress: true,
 				fallback: "404.html"
 			}),
-			alias: {
-				$data: "./src/data",
-				$components: "./src/lib/components"
-			},
 			compilerOptions: {
 				runes: true,
 				// ignore MDsveX deprecation warnings, just noise
 				warningFilter: (warning) => warning.code !== "script_context_deprecated"
 			},
 			experimental: {
-				explicitEnvironmentVariables: true,
 				sendWarningsToBrowser: true
 			}
 		})
@@ -52,8 +47,7 @@ export default defineConfig({
 					environment: "jsdom",
 					clearMocks: true,
 					include: ["src/**/*.svelte.{test,spec}.{js,ts}"],
-					exclude: ["src/lib/server/**"],
-					setupFiles: ["./vitest-setup-client.ts"]
+					exclude: ["src/lib/server/**"]
 				}
 			},
 			{

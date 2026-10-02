@@ -5,9 +5,7 @@ saveTypes: true
 autoDedupe: true
 minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
-  - cookie@0.7.0
-  - flatted@3.4.0
-  - flatted@3.4.2
-  - picomatch@4.0.4
   - yaml@1.10.3
-  - postcss@8.5.10
+  - "@sveltejs/adapter-auto@8.0.0"
+  - "@sveltejs/adapter-static@4.0.0"
+  - "@sveltejs/kit@3.0.0"
