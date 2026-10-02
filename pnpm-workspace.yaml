@@ -1,6 +1,9 @@
 allowBuilds:
   esbuild: true
 engineStrict: true
+saveTypes: true
+autoDedupe: true
+minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
   - cookie@0.7.0
   - flatted@3.4.0

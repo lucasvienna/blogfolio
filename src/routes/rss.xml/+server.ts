@@ -1,5 +1,5 @@
 import { fetchPosts } from "$lib/api";
-import config from "$lib/config";
+import { description, titlePrefix, url } from "$lib/config";
 
 import type { RequestHandler } from "./$types";
 
@@ -13,18 +13,18 @@ export const GET: RequestHandler = async ({ fetch }) => {
 	const xml = `
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
-				<title>${config.titlePrefix}Blog</title>
-				<description>${config.description}</description>
-				<link>${config.url}</link>
-				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
+				<title>${titlePrefix}Blog</title>
+				<description>${description}</description>
+				<link>${url}</link>
+				<atom:link href="${url}/rss.xml" rel="self" type="application/rss+xml"/>
 				${posts
 					.map(
 						(post) => `
 						<item>
 							<title>${post.title}</title>
 							<description>${post.description}</description>
-							<link>${config.url}/article/${post.slug}</link>
-							<guid isPermaLink="true">${config.url}/article/${post.slug}</guid>
+							<link>${url}/article/${post.slug}</link>
+							<guid isPermaLink="true">${url}/article/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 						</item>
 					`

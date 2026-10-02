@@ -4,8 +4,6 @@ import svelte from "eslint-plugin-svelte";
 import { includeIgnoreFile, defineConfig } from "eslint/config";
 import ts from "typescript-eslint";
 
-import svelteConfig from "./svelte.config.js";
-
 const gitignorePath = fileURLToPath(new URL("./.gitignore", import.meta.url));
 
 // Everything outside Svelte templates is linted by oxlint (see .oxlintrc.json).
@@ -19,7 +17,12 @@ export default defineConfig(includeIgnoreFile(gitignorePath), ...svelte.configs.
 			projectService: true,
 			extraFileExtensions: [".svelte"],
 			parser: ts.parser,
-			svelteConfig
+			svelteConfig: {
+				compilerOptions: {
+					runes: true
+				},
+				extensions: [".svelte", ".svx", ".md"]
+			}
 		}
 	}
 });
