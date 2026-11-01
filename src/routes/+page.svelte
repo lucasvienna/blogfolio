@@ -14,39 +14,42 @@
 
 <svelte:head>
 	<title>{config.titlePrefix}Home</title>
-	<meta name="description" content="Lucas' landing page" />
+	<meta
+		name="description"
+		content="Lucas Vienna, full-stack software architect in Karlsruhe. Backend services, web frontends, infrastructure as code and CI/CD platforms."
+	/>
 </svelte:head>
 
-<Heading title="Lucas Vienna" subtitle="Software Engineer | Product Manager" />
+<Heading title="Lucas Vienna" subtitle="Software architect · Full-stack, cloud and DevOps" />
 
 <section role="main">
 	<p>
-		I'm a cloud engineer with a passion for creating innovative solutions and exploring the latest
-		technologies. Whether it's diving into the world of containers, automating repetitive tasks,
-		leveraging the power of Rust, or building dynamic web applications with Svelte and React, I'm
-		constantly seeking new avenues to expand my skills.
+		I design and build cloud-native systems end to end: backend services, web frontends,
+		infrastructure as code and CI/CD platforms, with a specialisation in large frontend codebases.
+		On the side I build
+		<a href="https://uppity.cloud">Uppity</a>, open-source uptime monitoring and status pages, under
+		NeonRook, and maintain
+		<a href="https://github.com/AvyAddons">AvyAddons</a>, World of Warcraft add-ons with over 1.5
+		million downloads. Based in Karlsruhe.
 	</p>
+</section>
 
-	<p>
-		On this site, you'll find a collection of blog posts where I share insights into my current
-		projects, my programming methodologies, and intriguing pieces of software that have caught my
-		attention. I believe in the power of knowledge sharing and aim to provide valuable resources for
-		fellow developers, enthusiasts, and anyone curious about the tech world.
-	</p>
-
-	<p>
-		Additionally, my portfolio section showcases a range of personal projects I've worked on. These
-		projects reflect my dedication to innovation, problem-solving, and craftsmanship in software
-		development. Feel free to explore and get a glimpse into the projects that have shaped my
-		journey.
-	</p>
-
-	<p>
-		If you're interested in collaborating on exciting ventures or discussing opportunities, I'm
-		always open to new connections. Don't hesitate to reach out!
-	</p>
-
-	<p>Thank you for visiting, and I hope you find inspiration and insights within these pages.</p>
+<section>
+	<h3>Selected work</h3>
+	<ul>
+		<li>
+			<a href="https://uppity.cloud">Uppity</a>: open-source uptime monitoring and status pages,
+			built under NeonRook.
+		</li>
+		<li>
+			<a href="https://github.com/AvyAddons">AvyAddons</a>: open-source World of Warcraft add-ons,
+			1.5M+ downloads, maintained in my spare time since 2019.
+		</li>
+		<li>
+			Empire: an empire-building game server in Rust, described in
+			<a href={resolve("/article/[slug]", { slug: "empire-pt1" })}>the blog series</a>.
+		</li>
+	</ul>
 </section>
 
 <section role="feed">

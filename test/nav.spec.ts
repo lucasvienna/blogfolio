@@ -8,7 +8,7 @@ test("nvaigates to about page and back", async ({ page }) => {
 	await page.getByRole("link", { name: "About" }).click();
 	await page.waitForURL("/about");
 
-	await expect(page.getByText("A few words about me")).toBeVisible();
+	await expect(page.getByText("Software architect")).toBeVisible();
 
 	await page.getByRole("link", { name: "Lucas Vienna" }).click();
 	await page.waitForURL("/");
