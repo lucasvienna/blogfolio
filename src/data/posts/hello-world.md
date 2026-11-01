@@ -10,7 +10,7 @@ published: true
 
 **Hi, my name is Lucas**
 
-and I'm a Business Informatics graduate, software engineer, and translator. I'm also an avid reader,
+and I'm a Business Informatics graduate and software architect. I'm also an avid reader,
 I like to play videogames and write code in my free time, and I aspire to be a stoic—or at least
 emulate the sage well enough. With this first post, I aim to explain my reasoning for writing a blog
 and what its contents will be.
