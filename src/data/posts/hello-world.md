@@ -10,10 +10,10 @@ published: true
 
 **Hi, my name is Lucas**
 
-and I'm a Business Informatics graduate and software architect. I'm also an avid reader,
-I like to play videogames and write code in my free time, and I aspire to be a stoic—or at least
-emulate the sage well enough. With this first post, I aim to explain my reasoning for writing a blog
-and what its contents will be.
+and I'm a Business Informatics graduate and software architect. I'm also an avid reader, I like to
+play videogames and write code in my free time, and I aspire to be a stoic—or at least emulate the
+sage well enough. With this first post, I aim to explain my reasoning for writing a blog and what
+its contents will be.
 
 First in the order of business: why am I writing a blog. Simple: I wish to have a chronological
 record of my learnings, my work and the evolution of my knowledge over time. My idea was therefore
